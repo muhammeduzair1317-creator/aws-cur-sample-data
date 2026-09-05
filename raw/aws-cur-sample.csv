@@ -1,0 +1,16 @@
+bill/BillingPeriodStartDate,bill/BillingPeriodEndDate,lineItem/UsageAccountId,lineItem/ProductCode,lineItem/UsageType,lineItem/ResourceId,lineItem/UsageAmount,lineItem/UnblendedCost,lineItem/BlendedCost,lineItem/Operation,lineItem/AvailabilityZone,lineItem/LineItemType
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonEC2,USW2-BoxUsage:m5.large,i-0123456789abcdef0,730,292.80,292.80,RunInstances,us-west-2a,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonEC2,USW2-BoxUsage:t3.micro,i-0987654321fedcba0,730,9.24,9.24,RunInstances,us-west-2b,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonS3,USW2-TimedStorage-ByteHrs,bucket-prod-data,5242880000,120.99,120.99,PutObject,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonS3,USW2-Requests-Tier1,bucket-prod-data,1000,0.40,0.40,GetObject,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonRDS,USW2-InstanceUsage:db.t3.medium,db-instance-prod,730,156.48,156.48,CreateDBInstance,us-west-2b,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonRDS,USW2-InstanceUsage:db.m5.large,db-instance-analytics,730,624.00,624.00,CreateDBInstance,us-west-2a,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonDynamoDB,USW2-DDB.Write,table-orders,5000000,2.50,2.50,PutItem,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonDynamoDB,USW2-DDB.Read,table-orders,10000000,2.00,2.00,GetItem,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonLambda,USW2-Lambda-GB-Second,,,1000000,20.00,20.00,Invoke,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonCloudFront,USW2-CloudFront-Out-Bytes,,,50000000,6.50,6.50,GetObject,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonVPC,NatGateway-Hours,natgw-prod,730,32.85,32.85,CreateNatGateway,us-west-2a,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AWSLambda,Requests,,,1000,0.20,0.20,Invoke,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonElastiCache,USW2-NodeUsage:cache.t3.micro,redis-cache-prod,730,50.92,50.92,CreateCacheCluster,us-west-2a,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AWSCodeBuild,CodeBuild-Minutes,build-project-1,500,5.00,5.00,Build,us-west-2,Usage
+2024-01-01T00:00:00Z,2024-01-31T23:59:59Z,123456789012,AmazonSNS,Requests,topic-notifications,100000,0.50,0.50,Publish,us-west-2,Usage
